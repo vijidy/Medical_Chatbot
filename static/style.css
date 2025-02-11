@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    background-color: #242424;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 20px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.bot-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.bot-info h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.bot-info p {
+    color: #888;
+    font-size: 14px;
+}
+
+.chat-messages {
+    padding: 20px;
+    height: calc(80vh - 140px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 20px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #3b3b3b;
+    border-radius: 15px;
+    padding: 12px 15px;
+    color: white;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    border-radius: 15px;
+    padding: 12px 15px;
+    color: white;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.chat-input {
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3b3b3b;
+    color: white;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
